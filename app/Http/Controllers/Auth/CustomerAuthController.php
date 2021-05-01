@@ -38,7 +38,7 @@ class CustomerAuthController extends Controller
     public function login(LoginRequest $request) {
         $validatedRequest = $request->validated();
 
-        if(auth()->guard('customer')->attempt(['email' => $validatedRequest['email'], 'password' => $validatedRequest['password']])) {
+        if(auth('customer')->attempt(['email' => $validatedRequest['email'], 'password' => $validatedRequest['password']])) {
             return redirect()->intended(route('customers.shopping.index'));
         }
 

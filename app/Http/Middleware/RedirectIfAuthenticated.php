@@ -18,11 +18,11 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if($guard == 'admin' && auth($guard)->check()) {
+        if($guard === 'admin' && auth($guard)->check()) {
             return redirect()->route('admins.dashboard.index');
         } 
         
-        if($guard == 'customer' && auth($guard)->check()) {
+        if($guard === 'customer' && auth($guard)->check()) {
             return redirect()->route('customers.shopping.index');
         }
 

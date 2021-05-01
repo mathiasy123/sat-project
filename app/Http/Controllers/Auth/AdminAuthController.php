@@ -23,7 +23,7 @@ class AdminAuthController extends Controller
     public function login(LoginRequest $request) {
         $validatedRequest = $request->validated();
 
-        if(auth()->guard('admin')->attempt(['email' => $validatedRequest['email'], 'password' => $validatedRequest['password']])) {            
+        if(auth('admin')->attempt(['email' => $validatedRequest['email'], 'password' => $validatedRequest['password']])) {            
             return redirect()->intended(route('admins.dashboard.index'));
         }
 
