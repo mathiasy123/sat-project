@@ -1,0 +1,47 @@
+p {
+    font-size: 1.2em;
+}
+
+/* Navbar style */
+nav {
+    background-color: #F12F6B;
+}
+
+/* Carousel style */
+.carousel-inner .carousel-item img {
+    height: 70vh;
+}
+
+/* Pembayaran style */
+#pembayaran-section .row div:nth-child(1) img,
+#pembayaran-section .row div:nth-child(2) img {
+    margin-bottom: 150px;
+}
+
+/* Kontak style */
+#kontak-section .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+#kontak-section .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Footer style */
+#footer-section {
+    background-color: #F12F6B;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #pembayaran-section .row div:nth-child(3) img {
+        margin-bottom: 150px;
+    }
+}
