@@ -29,7 +29,7 @@
 <!-- End tentang section -->
 
 <!-- Layanan section -->
-<section class="bg-light p-5" id="layanan-section">
+{{-- <section class="bg-light p-5" id="layanan-section">
     <div class="container">
         <h1 class="text-center mt-3">Layanan Kami</h1>
 
@@ -77,6 +77,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- End layanan section -->
 @endsection

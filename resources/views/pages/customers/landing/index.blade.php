@@ -10,9 +10,7 @@
                     <h1>Kenapa Kami?</h1>
 
                     <p class="mt-3">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsum numquam deleniti
-                        repellendus consequatur labore assumenda molestias repellat nemo vero commodi facilis
-                        praesentium quia ad doloribus eligendi, dignissimos rem minus.
+                        Toko Sembada Anugrah Teknik adalah sebuah situs toko online mudah dan terpercaya. Kami memiliki toko fisik yang Anda bisa Kunjungi. Disini kami menjual beragam flowmeter, watermeter, SHM,Sensus dan Itron
                     </p>
                 </div>
             </div>
@@ -35,6 +33,7 @@
             @forelse ($categories as $category)
             @if($category->products()->exists() && $category->products()->first()->firstGallery()->exists())
             <div class="col12 col-sm-6  col-lg-4 mb-5">
+                <a href="/shopping">
                 <div class="card shadow">
                     <img src="{{ url('storage/' . $category->products()->first()->firstGallery()->where('status', 1)->first()->gallery_path) }}" class="card-img-top" alt="{{ $category->name }}"
                         height="300">
@@ -43,6 +42,7 @@
                         <p class="card-text text-uppercase text-center font-weight-bold">{{ $category->name }}</p>
                     </div>
                 </div>
+                </a>
             </div>
             @else
             <div class="col12 col-sm-6  col-lg-4 mb-5">
@@ -135,7 +135,7 @@
             <div class="col-12 text-center">
                 <div class="embed-responsive embed-responsive-4by3">
                     <iframe class="embed-responsive-item shadow-lg"
-                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                        src="https://www.youtube.com/embed/lYMHGQ1oggc?rel=0"></iframe>
                 </div>
             </div>
         </div>
